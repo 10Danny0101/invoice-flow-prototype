@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Invoice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create an Invoice</h2>
+        <form onsubmit="event.preventDefault(); location.href='success.html';">
+            <label>Client Name</label>
+            <input type="text" required>
+            <label>Service Description</label>
+            <input type="text" required>
+            <label>Amount (₦)</label>
+            <input type="number" required>
+            <label>Due Date</label>
+            <input type="date" required>
+            <button type="submit">Send Invoice</button>
+        </form>
+    </div>
+</body>
+</html>
